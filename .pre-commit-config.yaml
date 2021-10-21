@@ -1,0 +1,10 @@
+repos:
+  - repo: https://github.com/pycqa/pylint
+    rev: pylint-2.6.0
+    hooks:
+      - id: pylint
+        #        additional_dependencies: [fastapi, pylint-fastapi]
+        args:
+          - --max-line-length=99
+          - --rcfile=.pylintrc
+          - -d duplicate-code
